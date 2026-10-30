@@ -1,27 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>#######</title>
-    <meta name="description" content="######">
-    <meta name="author" content="Benjamin Heredia">
-    <link rel="stylesheet" href="##########">
+    <title>WDD 131 – Dynamic Web Fundamentals – Benjamin Heredia</title>
+    <meta name="description" content="This is a basic website Fundamentals">
+    <meta name="author" content="Benjamin Daniel Heredia Urbinatti">
+    <link rel="stylesheet" href="./styles/base.css">
+    <script src="./scripts/getdates.js" defer></script>
 </head>
-
 <body>
-
     <header>
-
+        <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://www.linkedin.com/in/benjamin-heredia-urb" title="LinkedIn">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" title="Canvas">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" title="Scripture">Scripture</a></li>
+                <li><a href="#" title="Final Project">Final Project</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
+        <h1>Benjamin Daniel Heredia Urbinatti</h1>
+        
+        <div class="card">
+            <section class="sub-section">
+                <h2>About Me</h2>
+                <div class="card-content">
+                    <p>My name is Benjamin Daniel Heredia Urbinatti, I am 20 years old and I live in Cordoba, Argentina. I am currently studying a degree in Computer Science at the National University of Cordoba. I have a passion for technology and programming, and I enjoy learning new things in this field.</p>
+                    <img src="./images/profile.jpg" alt="Foto de perfil de Benjamin">
+                </div>
+            </section>
 
+            <hr class="section-divider">
+
+            <section class="sub-section">
+                <h2>Córdoba, Argentina</h2>
+                <div class="flag-content">
+                    <div class="flag-container">
+                        <img src="./images/Flag_of_Argentina.jpg" alt="Foto de la bandera de Argentina">
+                        <p class="caption">Official Flag of Argentina</p>
+                    </div>
+                    <p>Córdoba is a city located in the center of Argentina. It is known for its rich history, beautiful architecture, and vibrant culture. The city has a strong educational presence, with several universities and research centers. It is also famous for its lively nightlife and delicious cuisine.</p>
+                </div>
+            </section>
+        </div>
+
+        
+        <aside class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org" title="MDN Web Docs" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://css-tricks.com" title="CSS-Tricks" target="_blank">CSS-Tricks</a></li>
+                <li><a href="https://developer.twitter.com/en/docs" title="Twitter Developer Documentation" target="_blank">Twitter Developer Documentation</a></li>
+                <li><a href="https://reactjs.org" title="React Official Site" target="_blank">React Official Site</a></li>
+                <li><a href="https://vuejs.org" title="Vue.js Official Site" target="_blank">Vue.js Official Site</a></li>
+            </ul>
+        </aside>
     </main>
 
     <footer>
-
+        <p>© <span id="currentyear"></span> ☀️ Benjamin Heredia ☀️ Cordoba, Argentina 🧉</p>
+        <p><span id="lastModified"></span></p>
     </footer>
-
 </body>
+</html>
