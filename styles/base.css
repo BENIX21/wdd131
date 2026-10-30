@@ -166,7 +166,6 @@ aside a:hover {
     text-decoration: underline;
 }
 
-/* Footer */
 footer {
     background: var(--footer-bg-color);
     color: var(--text-color-white);
