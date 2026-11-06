@@ -1,0 +1,144 @@
+:root {
+    --header-bg-color: #068f94;
+    --text-color-white: rgb(255, 255, 255);
+    --main-bg-color: #ffffff;
+    --footer-bg-color: #10466d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: var(--header-bg-color);
+    color: var(--text-color-white);
+    text-align: center;
+    padding: 20px;
+}
+
+
+nav {
+    background-color: var(--header-bg-color);
+    color: var(--text-color-white);
+    
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}   
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: larger;
+}
+
+nav a:hover {
+	background-color: var(--footer-bg-color);
+	color: var(--text-color-white);
+    border-radius: 5px;
+}
+
+.active {
+	color: var(--footer-bg-color);
+}
+
+li a{
+    color: var(--text-color-white);
+    
+}
+
+main { 
+  max-width: 800px;
+  margin: 1rem auto;
+  flex: 1;
+}
+
+img:hover {
+	box-shadow: 0 0 50px #333;
+}
+
+img {
+    border-radius: 5px;
+}
+
+.temple-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.temple-card img {
+    width: 100%;
+    height: 85%;
+    display: block;
+
+}
+
+.temple-card figcaption {
+    margin-top: 0.5rem;
+}
+
+footer {
+    background-color: var(--header-bg-color);
+    color: var(--text-color-white);
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/* Mobile header */
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+header h1 {
+    text-align: left;
+}
+
+/* Hamburger button */
+#menu {
+    display: block;
+    margin: 0;
+    padding: 0.5rem;
+    font-size: 2rem;
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    justify-self: end;
+}
+
+/* Navigation */
+nav {
+    grid-column: 1 / -1;
+}
+
+.navigation {
+    display: none;
+    flex-direction: column;
+}
+
+.navigation.show {
+    display: flex;
+}
