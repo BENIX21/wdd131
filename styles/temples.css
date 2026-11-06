@@ -1,8 +1,7 @@
 :root {
-    --header-bg-color: #068f94;
+    --header-bg-color: #08777c;
     --text-color-white: rgb(255, 255, 255);
     --main-bg-color: #ffffff;
-    --footer-bg-color: #10466d;
 }
 
 * {
@@ -25,13 +24,16 @@ header {
     color: var(--text-color-white);
     text-align: center;
     padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
 }
 
 
 nav {
     background-color: var(--header-bg-color);
     color: var(--text-color-white);
-
+    grid-column: 1 / -1;
 }
 
 nav ul {
@@ -106,13 +108,10 @@ footer {
 }
 
 /* Mobile header */
-header {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-}
 
-header h1 {
+.site-title {
+    font-size: 2rem;
+    font-weight: 700;
     text-align: left;
 }
 
@@ -130,9 +129,6 @@ header h1 {
 }
 
 /* Navigation */
-nav {
-    grid-column: 1 / -1;
-}
 
 .navigation {
     display: none;
