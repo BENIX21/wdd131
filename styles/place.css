@@ -79,7 +79,6 @@ main {
     filter: invert(20%) sepia(95%) saturate(1352%) hue-rotate(359deg) brightness(101%) contrast(106%);
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 1rem;
