@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Album</title>
+    <meta name="description"
+        content="W02 Assignment: Picture Album by Benjamin Daniel Heredia Urbinatti, featuring HTML, CSS, JavaScript, and web development.">
+
+    <meta name="author" content="Benjamin Daniel Heredia Urbinatti">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/filtered-temples.css">
+    <link rel="stylesheet" href="./styles/filtered-temples-large.css">
+    <script src="./scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <p class="site-title">Temple Album</p>
+
+        <button id="menu" type="button" aria-label="Open navigation menu" aria-expanded="false"
+            aria-controls="primary-navigation">
+            ☰
+        </button>
+
+        <nav>
+            <ul class="navigation" id="primary-navigation">
+                <li><a href="#temple-grid" id="home" title="Home">Home</a></li>
+                <li><a href="#temple-grid" id="old" title="Old">Old</a></li>
+                <li><a href="#temple-grid" id="new" title="New">New</a></li>
+                <li><a href="#temple-grid" id="large" title="Large">Large</a></li>
+                <li><a href="#temple-grid" id="small" title="Small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>HOME</h1>
+
+        <section class="temple-grid" id="temple-grid">
+            
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> ☀️ Benjamin Heredia ☀️ Cordoba, Argentina 🧉</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
