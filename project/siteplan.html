@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Plan | 3D Printing Studio</title>
+  <meta name="description" content="Website planning document for the 3D printing project, including site purpose, target scenarios, color schema, typography, and wireframes.">
+  <meta name="author" content="Benjamin Daniel Heredia Urbinatti">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="/project/images/logo.jpeg" alt="3D brain and geometric D emblem logo" width="64" height="64">
+      <div>
+        <p class="eyebrow">Website Planning Document</p>
+        <h1>3Demente</h1>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section aria-labelledby="site-name-heading">
+      <h2 id="site-name-heading">Site Name</h2>
+      <p>Represents custom 3D modeling, rapid prototyping, and on-demand 3D printed parts with a creative, engineering-focused identity.</p>
+      <p>Optional domain: <code>your3dbrand.com</code></p>
+    </section>
+
+    <section aria-labelledby="site-purpose-heading">
+      <h2 id="site-purpose-heading">Site Purpose</h2>
+      <p>The website serves as a showcase and ordering hub for custom 3D printing services. It presents the catalog of available prints and materials, explains how custom orders work, and shares background about the studio.</p>
+    </section>
+
+    <section aria-labelledby="scenarios-heading">
+      <h2 id="scenarios-heading">Scenarios</h2>
+      <ul>
+        <li>Which 3D printing filaments or materials are best for functional parts versus display models?</li>
+        <li>How do I submit a custom 3D print request and get an estimate?</li>
+        <li>Where can I view examples of completed 3D prints and learn about the studio?</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="color-schema-heading">
+      <h2 id="color-schema-heading">Color Schema</h2>
+      <div class="color-grid">
+        <div class="swatch">
+          <div class="swatch-box primary-dark"></div>
+          <p class="hex">#040C19</p>
+          <p class="usage">Header, footer, dark accents, and body text on light backgrounds</p>
+        </div>
+        <div class="swatch">
+          <div class="swatch-box accent-cyan"></div>
+          <p class="hex">#00A0C8</p>
+          <p class="usage">Accent borders, highlights, and accents over #040C19</p>
+        </div>
+        <div class="swatch">
+          <div class="swatch-box surface-light"></div>
+          <p class="hex">#FFFFFF</p>
+          <p class="usage">Main page background and text over #040C19</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="typography-heading">
+      <h2 id="typography-heading">Typography</h2>
+      <p><strong>Orbitron</strong> (sans-serif display) — used for main headings (<code>h1</code>, <code>h2</code>) to give a technical, 3D-inspired look.</p>
+      <p><strong>Plus Jakarta Sans</strong> (sans-serif) — used for body copy, lists, and labels for clean readability across screens.</p>
+    </section>
+
+    <section aria-labelledby="wireframes-heading">
+      <h2 id="wireframes-heading">Wireframes</h2>
+      <div class="wireframes-grid">
+        <figure class="wireframe-card">
+          <figcaption>Mobile Home Wireframe</figcaption>
+          <div class="wf-box wf-header">Logo + Menu</div>
+          <div class="wf-box wf-hero">Hero Banner + CTA</div>
+          <div class="wf-box wf-block">Featured Catalog</div>
+          <div class="wf-box wf-block">Order Process / About</div>
+          <div class="wf-box wf-footer">Footer</div>
+        </figure>
+
+        <figure class="wireframe-card">
+          <figcaption>Desktop Home Wireframe</figcaption>
+          <div class="wf-box wf-header">Logo + Nav Links</div>
+          <div class="wf-box wf-hero">Wide Hero Section</div>
+          <div class="wf-row">
+            <div class="wf-box wf-col">Catalog Item 1</div>
+            <div class="wf-box wf-col">Catalog Item 2</div>
+            <div class="wf-box wf-col">Catalog Item 3</div>
+          </div>
+          <div class="wf-box wf-footer">Footer</div>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+        <p>© <span id="currentyear"></span> ☀️ Benjamin Heredia ☀️ Cordoba, Argentina 🧉</p>
+        <p><span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

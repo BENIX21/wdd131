@@ -1,0 +1,156 @@
+:root {
+  --dark-bg: #040c19;
+  --accent-cyan: #00a0c8;
+  --light-bg: #ffffff;
+  --soft-panel: #f4f7fa;
+  --border-muted: #cbd5e1;
+  --heading-font: "Orbitron", sans-serif;
+  --body-font: "Plus Jakarta Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--light-bg);
+  color: var(--dark-bg);
+  font-family: var(--body-font);
+  line-height: 1.6;
+}
+
+.site-header {
+  background-color: var(--dark-bg);
+  color: var(--light-bg);
+  border-bottom: 4px solid var(--accent-cyan);
+  padding: 1.5rem;
+}
+
+.brand {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand img {
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.eyebrow {
+  color: var(--accent-cyan);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid var(--accent-cyan);
+  display: inline-block;
+}
+
+.container {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1.25rem;
+  display: grid;
+  gap: 2rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.swatch {
+  background-color: var(--soft-panel);
+  border: 1px solid var(--border-muted);
+  border-radius: 8px;
+  padding: 0.75rem;
+}
+
+.swatch-box {
+  height: 64px;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  border: 1px solid var(--border-muted);
+}
+
+.primary-dark { background-color: #040c19; }
+.accent-cyan { background-color: #00a0c8; }
+.surface-light { background-color: #ffffff; }
+
+.hex {
+  font-weight: 700;
+}
+
+.wireframes-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .wireframes-grid {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.wireframe-card {
+  background-color: var(--soft-panel);
+  border: 1px solid var(--border-muted);
+  border-radius: 8px;
+  padding: 1rem;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.wireframe-card figcaption {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.wf-box {
+  background-color: var(--light-bg);
+  border: 2px dashed var(--dark-bg);
+  padding: 0.75rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.wf-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.site-footer {
+  background-color: var(--dark-bg);
+  color: var(--light-bg);
+  text-align: center;
+  padding: 1.25rem;
+  margin-top: 2rem;
+}
