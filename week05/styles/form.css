@@ -1,0 +1,225 @@
+:root {
+    --primary-color: #3b6183;
+    --secondary-color: #e4dfe4;
+    --bg-page: #f7f6f8;
+    --text-dark: #1a1a1a;
+    --text-light: #ffffff;
+    --accent-blue: #1d4ed8;
+    --border-color: #b5aeb5;
+    --btn-bg: #f3f1f3;
+    --btn-hover: #dcd6dc;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-page);
+    color: var(--text-dark);
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header,
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1.25rem 1rem;
+}
+
+header h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 540px;
+    margin: 1rem auto;
+    padding: 0 0.75rem;
+}
+
+.review-form,
+.confirmation-card {
+    background-color: var(--secondary-color);
+    padding: 1.5rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+    border: none;
+}
+
+label,
+legend {
+    display: block;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+    color: var(--text-dark);
+}
+
+.required-mark {
+    color: #9b1c1c;
+}
+
+.optional {
+    font-weight: 400;
+    font-size: 0.85rem;
+    color: var(--accent-blue);
+}
+
+.sub-hint {
+    display: block;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 0.85rem;
+}
+
+/* Inputs general */
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.65rem 0.75rem;
+    font-size: 1rem;
+    font-family: inherit;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: var(--text-dark);
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 1px;
+}
+
+/* stars */
+.rating-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.25rem;
+}
+
+.rating-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.rating-item label {
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.rating-item input[type="radio"] {
+    width: 1.25rem;
+    height: 1.25rem;
+    cursor: pointer;
+    accent-color: var(--primary-color);
+}
+
+/* Checkboxes */
+.checkbox-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.35rem;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+    accent-color: var(--primary-color);
+}
+
+/* Bottom Submit */
+.submit-btn {
+    width: 100%;
+    padding: 0.85rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    background-color: var(--btn-bg);
+    border: 1px solid #8c858c;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--btn-hover);
+}
+
+/* styles review.html */
+.confirmation-card {
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+}
+
+.confirmation-card h2 {
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+}
+
+.counter-box {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    font-size: 1.1rem;
+}
+
+.back-link {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    opacity: 0.9;
+}
+
+/* Footer */
+footer p {
+    font-size: 0.9rem;
+    margin: 0.2rem 0;
+}
+
+#lastModified {
+    font-size: 0.82rem;
+    color: #f3e8f2;
+}
