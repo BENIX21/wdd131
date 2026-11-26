@@ -223,3 +223,19 @@ footer p {
     font-size: 0.82rem;
     color: #f3e8f2;
 }
+
+@media screen and (min-width: 640px) {
+    main {
+        margin: 2rem auto;
+        padding: 0 1.25rem;
+    }
+
+    .review-form,
+    .confirmation-card {
+        padding: 2rem;
+    }
+
+    .rating-item label {
+        font-size: 1.25rem;
+    }
+}
